@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cosmic Glitch Games | Indie Game Development Studio &amp; Portfolio</title>
+  <meta name="description" content="Cosmic Glitch Games is an indie game studio crafting arcade, hypercasual, and action games, including Alien Ascent and Spread Shift. Explore our game portfolio." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://cosmic-glitch-game-studio.github.io/" />
+
+  <!-- Open Graph / Facebook / Discord -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cosmic-glitch-game-studio.github.io/" />
+  <meta property="og:title" content="Cosmic Glitch Games | Indie Game Development Studio &amp; Portfolio" />
+  <meta property="og:description" content="Cosmic Glitch Games is an indie game studio crafting arcade, hypercasual, and action games. Explore our game portfolio." />
+  <meta property="og:image" content="https://cosmic-glitch-game-studio.github.io/static/companylogo.png" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@CosmicGlitchGS" />
+  <meta name="twitter:title" content="Cosmic Glitch Games | Indie Game Development Studio &amp; Portfolio" />
+  <meta name="twitter:description" content="Cosmic Glitch Games is an indie game studio crafting arcade, hypercasual, and action games. Explore our game portfolio." />
+  <meta name="twitter:image" content="https://cosmic-glitch-game-studio.github.io/static/companylogo.png" />
+
+  <!-- Google Fonts Preconnect for Core Web Vitals -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Schema.org Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Cosmic Glitch Games",
+    "url": "https://cosmic-glitch-game-studio.github.io/",
+    "logo": "https://cosmic-glitch-game-studio.github.io/static/companylogo.png",
+    "description": "Independent game development studio creating arcade, hypercasual, and action games.",
+    "sameAs": [
+      "https://bsky.app/profile/cosmicglitchgames.bsky.social",
+      "https://instagram.com/cosmicglitchgames",
+      "https://x.com/CosmicGlitchGS"
+    ]
+  }
+  </script>
+</head>
+<body>
+ 
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" aria-label="Main Navigation">
+    <div class="nav-logo">
+      <a href="./" class="nav-logo-cgg" aria-label="Cosmic Glitch Games Homepage">
+        <img src="static/companylogo.png" alt="Cosmic Glitch Games Logo" width="65" height="65" />
+      </a>
+    </div>
+    <div class="nav-links">
+      <a class="nav-link" href="#home" onclick="scrollToSlide(0); return false;">Home</a>
+      <a class="nav-link" href="#games" onclick="scrollToSlide(5); return false;">Games</a>
+    </div>
+  </nav>
+ 
+  <!-- ── SIDE SOCIAL MENU ── -->
+  <script src="social-menu.js"></script>
+
+  <!-- ── SLIDE DOTS NAVIGATION ── -->
+  <div class="slide-dots" id="slideDots" aria-label="Slide dots navigation"></div>
+
+  <!-- ── SCROLL HINT ── -->
+  <div class="scroll-hint" id="scrollHint" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 9l6 6 6-6"/>
+    </svg>
+  </div>
+
+  <!-- ── STARS CANVAS ── -->
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <!-- ── SHOOTING STARS ── -->
+  <div class="shooting-stars" aria-hidden="true">
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+  </div>
+
+  <!-- ── SLIDES (Pre-rendered for SEO & Crawlers) ── -->
+  <div id="slides">
+    <!-- Slide 1: Brand Hero -->
+    <div class="slide visible" id="home">
+      <div class="slide-card">
+        <div class="slide-art">
+          <svg class="slide-svg svg-couch" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="43" y="22" width="34" height="18" rx="2" stroke="#00ffcc" stroke-width="2.5"/>
+            <rect class="tv-screen" x="46" y="25" width="28" height="12" rx="1" fill="#ff00ff" opacity="0.5"/>
+            <rect class="tv-scan" x="46" y="25" width="28" height="2.5" fill="#00ffcc" opacity="0.8"/>
+            <path d="M60 40v4M52 46h16" stroke="#00ffcc" stroke-width="2" stroke-linecap="round"/>
+            <path d="M60 46q-3 15 0 31" stroke="#00ffcc" stroke-width="1.5" opacity="0.5"/>
+            <rect x="51" y="77" width="18" height="6" rx="2" stroke="#00ffcc" stroke-width="2"/>
+            <path d="M13 84q2-13 13-13q11 0 13 13" stroke="#00ffcc" stroke-width="2.5" stroke-linejoin="round"/>
+            <circle cx="26" cy="49" r="6" stroke="#00ffcc" stroke-width="2.5"/>
+            <path d="M20 54q6 11 12 0" stroke="#00ffcc" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="23" cy="49" r="1.7" stroke="#00ffcc" stroke-width="1.2"/>
+            <circle cx="29" cy="49" r="1.7" stroke="#00ffcc" stroke-width="1.2"/>
+            <path d="M24.8 49h2.4" stroke="#00ffcc" stroke-width="1.2"/>
+            <path d="M27 70l9 3" stroke="#00ffcc" stroke-width="2.5" stroke-linecap="round"/>
+            <rect class="ctl" x="33" y="68" width="12" height="6.5" rx="3.25" stroke="#ff00ff" stroke-width="2"/>
+            <path d="M39 70.5v1.5M38.25 71.25h1.5" stroke="#ff00ff" stroke-width="1.2"/>
+            <path d="M85 84q1-11 9-11q8 0 9 11" stroke="#00ffcc" stroke-width="2.5" stroke-linejoin="round"/>
+            <circle cx="94" cy="51" r="5" stroke="#00ffcc" stroke-width="2.5"/>
+            <path d="M89.5 48q4.5-4 9 0" stroke="#00ffcc" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M92 72l-9 2" stroke="#00ffcc" stroke-width="2.5" stroke-linecap="round"/>
+            <rect class="ctl" x="73" y="69" width="12" height="6.5" rx="3.25" stroke="#ff00ff" stroke-width="2"/>
+            <path d="M79 71.5v1.5M78.25 72.25h1.5" stroke="#ff00ff" stroke-width="1.2"/>
+            <path d="M8 86h104" stroke="#00ffcc" stroke-width="1.5" opacity="0.25"/>
+          </svg>
+        </div>
+        <h1 class="trippy">Cosmic Glitch Games</h1>
+        <p>We design experiences that are easy to pick up and impossible to put down</p>
+      </div>
+    </div>
+
+    <!-- Slide 2: Philosophy -->
+    <div class="slide">
+      <div class="slide-card">
+        <div class="slide-art">
+          <svg class="slide-svg svg-gamepad" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M40 36h40a22 22 0 0 1 22 22v6a22 22 0 0 1-22 22H40a22 22 0 0 1-22-22V58a22 22 0 0 1 22-22z" stroke="#00ffcc" stroke-width="2.5"/>
+            <path d="M33 50v16M25 58h16" stroke="#00ffcc" stroke-width="3" stroke-linecap="round"/>
+            <circle class="pad-btn b1" cx="78" cy="54" r="3.5" fill="#ff00ff"/>
+            <circle class="pad-btn b2" cx="88" cy="64" r="3.5" fill="#ff00ff"/>
+            <circle class="pad-btn b3" cx="78" cy="74" r="3.5" fill="#00ffcc"/>
+          </svg>
+        </div>
+        <h2 class="trippy">Our Philosophy</h2>
+        <p>It has to feel right</p>
+      </div>
+    </div>
+
+    <!-- Slide 3: Dedication & Detail -->
+    <div class="slide">
+      <div class="slide-card">
+        <div class="slide-art">
+          <svg class="slide-svg svg-search" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="#00ffcc">
+              <circle cx="26" cy="36" r="1.6"/><circle cx="34" cy="36" r="1.6"/><circle cx="42" cy="36" r="1.6"/>
+              <circle cx="26" cy="44" r="1.6"/><circle cx="34" cy="44" r="1.6" class="hot-dot"/><circle cx="42" cy="44" r="1.6"/>
+              <circle cx="26" cy="52" r="1.6"/><circle cx="34" cy="52" r="1.6"/><circle cx="42" cy="52" r="1.6"/>
+            </g>
+            <g class="glass">
+              <circle cx="70" cy="54" r="16" stroke="#00ffcc" stroke-width="2.5"/>
+              <path d="M82 66l12 12" stroke="#00ffcc" stroke-width="5" stroke-linecap="round"/>
+              <path d="M70 40a14 14 0 0 1 14 14" stroke="#ff00ff" stroke-width="2" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+        <h2 class="trippy">Dedication &amp; Detail</h2>
+        <p>The details are the product</p>
+      </div>
+    </div>
+
+    <!-- Slide 4: Built for Everyone -->
+    <div class="slide">
+      <div class="slide-card">
+        <div class="slide-art">
+          <svg class="slide-svg svg-planet" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <ellipse cx="60" cy="60" rx="46" ry="17" stroke="#00ffcc" stroke-width="1.5" opacity="0.45"/>
+            <ellipse cx="60" cy="60" rx="46" ry="17" stroke="#00ffcc" stroke-width="1" opacity="0.35" transform="rotate(90 60 60)" stroke-dasharray="2 9"/>
+            <circle class="planet-core" cx="60" cy="60" r="24" stroke="#ff00ff" stroke-width="2.5"/>
+            <circle class="planet-core" cx="60" cy="60" r="15" stroke="#ff00ff" stroke-width="1" opacity="0.35"/>
+            <g class="orbit-dot"><circle cx="14" cy="60" r="4" fill="#00ffcc"/></g>
+            <g class="orbit-dot2"><circle cx="106" cy="60" r="3" fill="#ff00ff"/></g>
+          </svg>
+        </div>
+        <h2 class="trippy">Built for Everyone</h2>
+        <p>Any player. Any device. Any moment</p>
+      </div>
+    </div>
+
+    <!-- Slide 5: Infinite Ambition -->
+    <div class="slide">
+      <div class="slide-card">
+        <div class="slide-art">
+          <svg class="slide-svg svg-rocket" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path class="flame" d="M60 84c-6 0-8.5-6-6.5-10 3.5-2 9.5-2 13 0 2 4-.5 10-6.5 10z" fill="#ff00ff" opacity="0.9"/>
+            <path d="M60 26l15 36c0 8-6.5 14-15 14s-15-6-15-14l15-36z" stroke="#00ffcc" stroke-width="2.5" stroke-linejoin="round"/>
+            <circle cx="60" cy="49" r="6" stroke="#00ffcc" stroke-width="2"/>
+            <path d="M45 58 33 70l12 5M75 58l12 12-12 5" stroke="#00ffcc" stroke-width="2.5" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h2 class="trippy">Infinite Ambition</h2>
+        <p>We play the long game</p>
+      </div>
+    </div>
+
+    <!-- Slide 6: SpreadShift -->
+    <div class="slide" id="games">
+      <div class="slide-card">
+        <h2 class="trippy">SpreadShift</h2>
+        <p>The galaxy fights back. So do you</p>
+        <a href="spreadshift/index.html" class="slide-cta">Play Now</a>
+      </div>
+    </div>
+
+    <!-- Slide 7: Alien Ascent -->
+    <div class="slide">
+      <div class="slide-card">
+        <h2 class="trippy">Alien Ascent</h2>
+        <p>Make your way to the stars</p>
+        <a href="alienascent/index.html" class="slide-cta">Play Now</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">&copy; 2026 Cosmic Glitch Games</footer>
+ 
+  <script src="slides.js"></script>
+  <script src="animations.js"></script>
+  <script>
+    // Disable browser scroll restoration on reload
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+ 
+    // Scroll to a specific slide by index
+    function scrollToSlide(index) {
+      const slides = document.querySelectorAll('.slide');
+      if (slides[index]) {
+        slides[index].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+      return false;
+    }
+
+    // Build slide dots navigation
+    const slideDots = document.getElementById('slideDots');
+    slideDots.innerHTML = '';
+    document.querySelectorAll('.slide').forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.className = 'slide-dot';
+      dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+      dot.addEventListener('click', () => scrollToSlide(i));
+      slideDots.appendChild(dot);
+    });
+
+    // Scroll to top and update visibility on full page load
+    window.addEventListener('load', () => {
+      window.scrollTo(0, 0);
+      updateVisibility();
+    });
+    window.addEventListener('scroll', updateVisibility);
+    window.addEventListener('resize', updateVisibility);
+
+    // Only one slide visible at a time, centered
+    function updateVisibility() {
+      const slides = document.querySelectorAll('.slide');
+      const windowCenter = window.innerHeight / 2;
+      let closestIndex = 0;
+      let closestDistance = Infinity;
+      slides.forEach((slide, i) => {
+        const rect = slide.getBoundingClientRect();
+        const slideCenter = rect.top + rect.height / 2;
+        const distance = Math.abs(slideCenter - windowCenter);
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestIndex = i;
+        }
+      });
+      slides.forEach(slide => slide.classList.remove('visible'));
+      if (slides[closestIndex]) {
+        slides[closestIndex].classList.add('visible');
+      }
+      slideDots.querySelectorAll('.slide-dot').forEach((dot, i) => {
+        dot.classList.toggle('active', i === closestIndex);
+      });
+      const scrollHint = document.getElementById('scrollHint');
+      if (scrollHint) {
+        scrollHint.classList.toggle('visible', closestIndex === 0);
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cosmic-glitch-game-studio.github.io/sitemap.xml
+

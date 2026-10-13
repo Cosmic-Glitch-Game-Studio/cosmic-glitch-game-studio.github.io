@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spread Shift - Top-Down Bullet Hell Shooter | Cosmic Glitch Games</title>
+  <meta name="description" content="Spread Shift is a fast-paced top-down bullet hell shooter by Cosmic Glitch Games. Command your spaceship, master spread-fire weapons, and outlast relentless enemy waves." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://cosmic-glitch-game-studio.github.io/spreadshift/" />
+
+  <!-- Open Graph / Facebook / Discord -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cosmic-glitch-game-studio.github.io/spreadshift/" />
+  <meta property="og:title" content="Spread Shift - Top-Down Bullet Hell Shooter | Cosmic Glitch Games" />
+  <meta property="og:description" content="Master your spread-fire arsenal and outlast the onslaught. Play Spread Shift in your web browser." />
+  <meta property="og:image" content="https://cosmic-glitch-game-studio.github.io/static/companylogo.png" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@CosmicGlitchGS" />
+  <meta name="twitter:title" content="Spread Shift - Top-Down Bullet Hell Shooter | Cosmic Glitch Games" />
+  <meta name="twitter:description" content="Master your spread-fire arsenal and outlast the onslaught. Play Spread Shift in your web browser." />
+  <meta name="twitter:image" content="https://cosmic-glitch-game-studio.github.io/static/companylogo.png" />
+
+  <!-- Google Fonts Preconnect for Core Web Vitals -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+  <link rel="stylesheet" href="../styles.css" />
+
+  <!-- Schema.org VideoGame Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Spread Shift",
+    "description": "Spread Shift is a top-down bullet hell arcade shooter built for a game jam around the theme of Invincible. Command your spaceship in the centre of the storm.",
+    "genre": ["Top-Down Shooter", "Bullet Hell", "Arcade", "Action"],
+    "gamePlatform": ["Web Browser", "PC"],
+    "operatingSystem": "Web Browser",
+    "applicationCategory": "Game",
+    "author": {
+      "@type": "Organization",
+      "name": "Cosmic Glitch Games",
+      "url": "https://cosmic-glitch-game-studio.github.io/"
+    },
+    "url": "https://cosmic-glitch-game-studio.github.io/spreadshift/",
+    "sameAs": [
+      "https://cosmicglitchgames.itch.io/spreadshift"
+    ]
+  }
+  </script>
+</head>
+<body>
+ 
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" aria-label="Main Navigation">
+    <div class="nav-logo">
+      <a href="../index.html" class="nav-logo-cgg" aria-label="Cosmic Glitch Games Homepage">
+        <img src="../static/companylogo.png" alt="Cosmic Glitch Games Logo" width="65" height="65" />
+      </a>
+    </div>
+    <div class="nav-links">
+      <a class="nav-link" href="../index.html">Home</a>
+    </div>
+  </nav>
+ 
+  <!-- ── SIDE SOCIAL MENU ── -->
+  <script src="../social-menu.js"></script>
+ 
+  <!-- ── STARS CANVAS ── -->
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <!-- ── SHOOTING STARS ── -->
+  <div class="shooting-stars" aria-hidden="true">
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+  </div>
+ 
+  <!-- ══════════════════════════════════════
+       GAME PAGE CONTENT
+  ══════════════════════════════════════ -->
+  <main class="game-page">
+ 
+    <!-- 1 · HERO -->
+    <section class="game-hero">
+      <h1 class="trippy">Spread Shift</h1>
+      <p class="game-tagline">Top-Down Shooter &bull; Bullet Hell &bull; Arcade</p>
+      <div class="game-tags">
+        <span class="game-tag">Bullet Hell</span>
+        <span class="game-tag">Top-Down Shooter</span>
+        <span class="game-tag">Arcade</span>
+        <span class="game-tag">Game Jam</span>
+      </div>
+    </section>
+ 
+    <div class="game-divider"></div>
+ 
+    <!-- 2 · DESCRIPTION -->
+    <section class="game-description">
+      <h2>About the Game</h2>
+      <p>
+        You are invincible — or so the galaxy thought. Spread Shift is a
+        top-down bullet hell arcade shooter built for a game jam around
+        the theme of <em>Invincible</em>. Command your spaceship in the
+        centre of the storm as waves of enemies converge from every direction,
+        hurling themselves at your hull. Master your spread-fire arsenal,
+        read the chaos, and outlast the onslaught. The enemies don't fire
+        back — they <em>are</em> the bullet.
+      </p>
+    </section>
+ 
+    <div class="game-divider"></div>
+ 
+    <!-- 3 · PLATFORMS -->
+    <section class="platforms-section">
+      <h2>Available On</h2>
+      <div class="platforms-grid" id="platforms-grid"></div>
+    </section>
+ 
+  </main>
+
+  <footer class="site-footer">&copy; 2026 Cosmic Glitch Games</footer>
+
+  <script src="../animations.js"></script>
+  <script src="../platforms.js"></script>
+  <script>renderPlatforms('spreadshift');</script>
+</body>
+</html>
